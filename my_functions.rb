@@ -12,7 +12,7 @@ def sum_array(numbers)
 end
 
 
-def find_item(array,item_to_find)
+def find_item?(array,item_to_find)
   for single_value in array
     if single_value == item_to_find
       return true

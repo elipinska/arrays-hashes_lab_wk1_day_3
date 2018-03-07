@@ -21,12 +21,12 @@ class My_Functions < MiniTest::Test
   # Write a function that has two parameters, array and item
   # It should return true if the item exists in the array otherwise it should return false
   def test_find_item_true
-    result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Ravenclaw" )
+    result = find_item?( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Ravenclaw" )
     assert_equal( true, result )
   end
 
   def test_find_item_false
-    result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Batman" )
+    result = find_item?([ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Batman" )
     assert_equal( false, result )
   end
 
