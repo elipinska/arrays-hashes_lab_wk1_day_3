@@ -32,6 +32,8 @@ p stops.length
 puts "A8."
 p stops[2]
 p stops[-5]
+p stops.at(2)
+p stops.at(-5)
 # 9. Reverse the positions of the stops in the array
 puts "A9."
 p stops.reverse
