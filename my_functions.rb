@@ -28,7 +28,7 @@ def get_first_key(my_hash)
 end
 
 
-def array_of_capitals(hash_with_countries)
+def get_array_of_capitals(hash_with_countries)
   capitals_array = []
 
   hash_with_countries.each do |key, value|

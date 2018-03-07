@@ -44,7 +44,7 @@ class My_Functions < MiniTest::Test
   end
 
 
-  def test_array_of_capitals
+  def test_get_array_of_capitals
     countries = {
     uk: {
       capital: 'London',
@@ -59,7 +59,7 @@ class My_Functions < MiniTest::Test
       population: 56
     }
 }
-  result = array_of_capitals(countries)
+  result = get_array_of_capitals(countries)
   assert_equal(['London', 'Paris', 'Rome'], result)
   end
 
