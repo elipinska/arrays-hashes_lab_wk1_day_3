@@ -31,11 +31,14 @@ end
 def get_array_of_capitals(hash_with_countries)
   capitals_array = []
 
-  for country in hash_with_countries
-    capitals_array.push(country[1][:capital])
-  end
+  hash_with_countries.each {|k, v| capitals_array.push(v[:capital])}
 
-  # Alternative solution:
+  # Alternative solution
+  # for country in hash_with_countries
+  #   capitals_array.push(country[1][:capital])
+  # end
+
+  # Another alternative solution:
   # hash_with_countries.each do |key, value|
   # capitals_array.push(value[:capital])
   # end
